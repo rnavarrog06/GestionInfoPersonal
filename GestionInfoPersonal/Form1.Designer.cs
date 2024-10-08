@@ -30,45 +30,52 @@
         {
             this.tcPrincipal = new System.Windows.Forms.TabControl();
             this.tpDatosPersonales = new System.Windows.Forms.TabPage();
-            this.tpPreferencias = new System.Windows.Forms.TabPage();
-            this.tpVisualizacion = new System.Windows.Forms.TabPage();
-            this.pnlTextBox = new System.Windows.Forms.Panel();
-            this.pnlRadioBtn = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.mcNacimiento = new System.Windows.Forms.MonthCalendar();
-            this.lblNacimiento = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.lblGenero = new System.Windows.Forms.Label();
-            this.lblEdad = new System.Windows.Forms.Label();
             this.nudEdad = new System.Windows.Forms.NumericUpDown();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.pnlRadioBtn = new System.Windows.Forms.Panel();
+            this.lblGenero = new System.Windows.Forms.Label();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pnlTextBox = new System.Windows.Forms.Panel();
+            this.lblNacimiento = new System.Windows.Forms.Label();
+            this.mcNacimiento = new System.Windows.Forms.MonthCalendar();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tpPreferencias = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbBoletin = new System.Windows.Forms.CheckBox();
-            this.cbAlcohol = new System.Windows.Forms.CheckBox();
-            this.cbDulces = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.lblHobbies = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblResidencia = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.lblSatisfaccion = new System.Windows.Forms.Label();
             this.lblRecomendar = new System.Windows.Forms.Label();
+            this.lblSatisfaccion = new System.Windows.Forms.Label();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.lblResidencia = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblHobbies = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cbDulces = new System.Windows.Forms.CheckBox();
+            this.cbAlcohol = new System.Windows.Forms.CheckBox();
+            this.cbBoletin = new System.Windows.Forms.CheckBox();
+            this.tpVisualizacion = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.tcPrincipal.SuspendLayout();
             this.tpDatosPersonales.SuspendLayout();
-            this.tpPreferencias.SuspendLayout();
-            this.pnlTextBox.SuspendLayout();
-            this.pnlRadioBtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).BeginInit();
+            this.pnlRadioBtn.SuspendLayout();
+            this.pnlTextBox.SuspendLayout();
+            this.tpPreferencias.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.tpVisualizacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tcPrincipal
@@ -96,26 +103,85 @@
             this.tpDatosPersonales.Text = "Datos Personales";
             this.tpDatosPersonales.UseVisualStyleBackColor = true;
             // 
-            // tpPreferencias
+            // nudEdad
             // 
-            this.tpPreferencias.Controls.Add(this.panel1);
-            this.tpPreferencias.Location = new System.Drawing.Point(4, 25);
-            this.tpPreferencias.Name = "tpPreferencias";
-            this.tpPreferencias.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPreferencias.Size = new System.Drawing.Size(767, 396);
-            this.tpPreferencias.TabIndex = 1;
-            this.tpPreferencias.Text = "Preferencias";
-            this.tpPreferencias.UseVisualStyleBackColor = true;
+            this.nudEdad.Location = new System.Drawing.Point(566, 315);
+            this.nudEdad.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudEdad.Name = "nudEdad";
+            this.nudEdad.Size = new System.Drawing.Size(120, 22);
+            this.nudEdad.TabIndex = 3;
+            this.nudEdad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // tpVisualizacion
+            // lblEdad
             // 
-            this.tpVisualizacion.Location = new System.Drawing.Point(4, 25);
-            this.tpVisualizacion.Name = "tpVisualizacion";
-            this.tpVisualizacion.Padding = new System.Windows.Forms.Padding(3);
-            this.tpVisualizacion.Size = new System.Drawing.Size(767, 396);
-            this.tpVisualizacion.TabIndex = 2;
-            this.tpVisualizacion.Text = "Visualizacion";
-            this.tpVisualizacion.UseVisualStyleBackColor = true;
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Location = new System.Drawing.Point(603, 281);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(40, 16);
+            this.lblEdad.TabIndex = 2;
+            this.lblEdad.Text = "Edad";
+            // 
+            // pnlRadioBtn
+            // 
+            this.pnlRadioBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlRadioBtn.Controls.Add(this.lblGenero);
+            this.pnlRadioBtn.Controls.Add(this.radioButton3);
+            this.pnlRadioBtn.Controls.Add(this.radioButton2);
+            this.pnlRadioBtn.Controls.Add(this.radioButton1);
+            this.pnlRadioBtn.Location = new System.Drawing.Point(26, 268);
+            this.pnlRadioBtn.Name = "pnlRadioBtn";
+            this.pnlRadioBtn.Size = new System.Drawing.Size(460, 114);
+            this.pnlRadioBtn.TabIndex = 1;
+            // 
+            // lblGenero
+            // 
+            this.lblGenero.AutoSize = true;
+            this.lblGenero.Location = new System.Drawing.Point(28, 48);
+            this.lblGenero.Name = "lblGenero";
+            this.lblGenero.Size = new System.Drawing.Size(55, 16);
+            this.lblGenero.TabIndex = 3;
+            this.lblGenero.Text = "Genero:";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(116, 84);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(103, 20);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(116, 46);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(103, 20);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(116, 8);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(103, 20);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // pnlTextBox
             // 
@@ -133,56 +199,20 @@
             this.pnlTextBox.Size = new System.Drawing.Size(729, 243);
             this.pnlTextBox.TabIndex = 0;
             // 
-            // pnlRadioBtn
+            // lblNacimiento
             // 
-            this.pnlRadioBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlRadioBtn.Controls.Add(this.lblGenero);
-            this.pnlRadioBtn.Controls.Add(this.radioButton3);
-            this.pnlRadioBtn.Controls.Add(this.radioButton2);
-            this.pnlRadioBtn.Controls.Add(this.radioButton1);
-            this.pnlRadioBtn.Location = new System.Drawing.Point(26, 268);
-            this.pnlRadioBtn.Name = "pnlRadioBtn";
-            this.pnlRadioBtn.Size = new System.Drawing.Size(460, 114);
-            this.pnlRadioBtn.TabIndex = 1;
+            this.lblNacimiento.AutoSize = true;
+            this.lblNacimiento.Location = new System.Drawing.Point(523, -1);
+            this.lblNacimiento.Name = "lblNacimiento";
+            this.lblNacimiento.Size = new System.Drawing.Size(138, 16);
+            this.lblNacimiento.TabIndex = 7;
+            this.lblNacimiento.Text = "Fecha de Nacimiento:";
             // 
-            // textBox1
+            // mcNacimiento
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 22);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(117, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(252, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(117, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 22);
-            this.textBox3.TabIndex = 2;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(26, 39);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
-            this.lblNombre.TabIndex = 3;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(26, 109);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(64, 16);
-            this.lblDireccion.TabIndex = 4;
-            this.lblDireccion.Text = "Dirección";
+            this.mcNacimiento.Location = new System.Drawing.Point(456, 26);
+            this.mcNacimiento.Name = "mcNacimiento";
+            this.mcNacimiento.TabIndex = 6;
             // 
             // lblCorreo
             // 
@@ -193,88 +223,55 @@
             this.lblCorreo.TabIndex = 5;
             this.lblCorreo.Text = "Correo";
             // 
-            // mcNacimiento
+            // lblDireccion
             // 
-            this.mcNacimiento.Location = new System.Drawing.Point(456, 26);
-            this.mcNacimiento.Name = "mcNacimiento";
-            this.mcNacimiento.TabIndex = 6;
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(26, 109);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(64, 16);
+            this.lblDireccion.TabIndex = 4;
+            this.lblDireccion.Text = "Dirección";
             // 
-            // lblNacimiento
+            // lblNombre
             // 
-            this.lblNacimiento.AutoSize = true;
-            this.lblNacimiento.Location = new System.Drawing.Point(523, -1);
-            this.lblNacimiento.Name = "lblNacimiento";
-            this.lblNacimiento.Size = new System.Drawing.Size(138, 16);
-            this.lblNacimiento.TabIndex = 7;
-            this.lblNacimiento.Text = "Fecha de Nacimiento:";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(26, 39);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "Nombre";
             // 
-            // radioButton1
+            // textBox3
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(116, 8);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(117, 176);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(252, 22);
+            this.textBox3.TabIndex = 2;
             // 
-            // radioButton2
+            // textBox2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(116, 46);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(103, 20);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(117, 106);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(252, 22);
+            this.textBox2.TabIndex = 1;
             // 
-            // radioButton3
+            // textBox1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(116, 84);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(103, 20);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(117, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(252, 22);
+            this.textBox1.TabIndex = 0;
             // 
-            // lblGenero
+            // tpPreferencias
             // 
-            this.lblGenero.AutoSize = true;
-            this.lblGenero.Location = new System.Drawing.Point(28, 48);
-            this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(55, 16);
-            this.lblGenero.TabIndex = 3;
-            this.lblGenero.Text = "Genero:";
-            // 
-            // lblEdad
-            // 
-            this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(603, 281);
-            this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(40, 16);
-            this.lblEdad.TabIndex = 2;
-            this.lblEdad.Text = "Edad";
-            // 
-            // nudEdad
-            // 
-            this.nudEdad.Location = new System.Drawing.Point(566, 315);
-            this.nudEdad.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudEdad.Name = "nudEdad";
-            this.nudEdad.Size = new System.Drawing.Size(120, 22);
-            this.nudEdad.TabIndex = 3;
-            this.nudEdad.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.tpPreferencias.Controls.Add(this.panel1);
+            this.tpPreferencias.Location = new System.Drawing.Point(4, 25);
+            this.tpPreferencias.Name = "tpPreferencias";
+            this.tpPreferencias.Padding = new System.Windows.Forms.Padding(3);
+            this.tpPreferencias.Size = new System.Drawing.Size(767, 396);
+            this.tpPreferencias.TabIndex = 1;
+            this.tpPreferencias.Text = "Preferencias";
+            this.tpPreferencias.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -294,35 +291,65 @@
             this.panel1.Size = new System.Drawing.Size(734, 369);
             this.panel1.TabIndex = 0;
             // 
-            // cbBoletin
+            // lblRecomendar
             // 
-            this.cbBoletin.AutoSize = true;
-            this.cbBoletin.Location = new System.Drawing.Point(23, 18);
-            this.cbBoletin.Name = "cbBoletin";
-            this.cbBoletin.Size = new System.Drawing.Size(154, 20);
-            this.cbBoletin.TabIndex = 0;
-            this.cbBoletin.Text = "Suscribirse al Boletin";
-            this.cbBoletin.UseVisualStyleBackColor = true;
+            this.lblRecomendar.AutoSize = true;
+            this.lblRecomendar.Location = new System.Drawing.Point(421, 257);
+            this.lblRecomendar.Name = "lblRecomendar";
+            this.lblRecomendar.Size = new System.Drawing.Size(197, 16);
+            this.lblRecomendar.TabIndex = 10;
+            this.lblRecomendar.Text = "¿Recomendarías este servicio?";
             // 
-            // cbAlcohol
+            // lblSatisfaccion
             // 
-            this.cbAlcohol.AutoSize = true;
-            this.cbAlcohol.Location = new System.Drawing.Point(23, 44);
-            this.cbAlcohol.Name = "cbAlcohol";
-            this.cbAlcohol.Size = new System.Drawing.Size(153, 20);
-            this.cbAlcohol.TabIndex = 1;
-            this.cbAlcohol.Text = "Bebidas Alcoholicas";
-            this.cbAlcohol.UseVisualStyleBackColor = true;
+            this.lblSatisfaccion.AutoSize = true;
+            this.lblSatisfaccion.Location = new System.Drawing.Point(452, 131);
+            this.lblSatisfaccion.Name = "lblSatisfaccion";
+            this.lblSatisfaccion.Size = new System.Drawing.Size(133, 16);
+            this.lblSatisfaccion.TabIndex = 9;
+            this.lblSatisfaccion.Text = "Nivel de Satisfaccion";
             // 
-            // cbDulces
+            // trackBar2
             // 
-            this.cbDulces.AutoSize = true;
-            this.cbDulces.Location = new System.Drawing.Point(23, 70);
-            this.cbDulces.Name = "cbDulces";
-            this.cbDulces.Size = new System.Drawing.Size(148, 20);
-            this.cbDulces.TabIndex = 2;
-            this.cbDulces.Text = "Dulces, chucherias..";
-            this.cbDulces.UseVisualStyleBackColor = true;
+            this.trackBar2.BackColor = System.Drawing.Color.Linen;
+            this.trackBar2.Location = new System.Drawing.Point(367, 276);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(309, 56);
+            this.trackBar2.TabIndex = 8;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.BackColor = System.Drawing.Color.Linen;
+            this.trackBar1.Location = new System.Drawing.Point(367, 150);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(309, 56);
+            this.trackBar1.TabIndex = 7;
+            // 
+            // lblResidencia
+            // 
+            this.lblResidencia.AutoSize = true;
+            this.lblResidencia.Location = new System.Drawing.Point(452, 44);
+            this.lblResidencia.Name = "lblResidencia";
+            this.lblResidencia.Size = new System.Drawing.Size(128, 16);
+            this.lblResidencia.TabIndex = 6;
+            this.lblResidencia.Text = "País de Residencia:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(367, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(309, 24);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // lblHobbies
+            // 
+            this.lblHobbies.AutoSize = true;
+            this.lblHobbies.Location = new System.Drawing.Point(71, 190);
+            this.lblHobbies.Name = "lblHobbies";
+            this.lblHobbies.Size = new System.Drawing.Size(59, 16);
+            this.lblHobbies.TabIndex = 4;
+            this.lblHobbies.Text = "Hobbies";
             // 
             // checkedListBox1
             // 
@@ -339,87 +366,120 @@
             this.checkedListBox1.Size = new System.Drawing.Size(154, 123);
             this.checkedListBox1.TabIndex = 3;
             // 
-            // lblHobbies
+            // cbDulces
             // 
-            this.lblHobbies.AutoSize = true;
-            this.lblHobbies.Location = new System.Drawing.Point(71, 190);
-            this.lblHobbies.Name = "lblHobbies";
-            this.lblHobbies.Size = new System.Drawing.Size(59, 16);
-            this.lblHobbies.TabIndex = 4;
-            this.lblHobbies.Text = "Hobbies";
+            this.cbDulces.AutoSize = true;
+            this.cbDulces.Location = new System.Drawing.Point(23, 70);
+            this.cbDulces.Name = "cbDulces";
+            this.cbDulces.Size = new System.Drawing.Size(148, 20);
+            this.cbDulces.TabIndex = 2;
+            this.cbDulces.Text = "Dulces, chucherias..";
+            this.cbDulces.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cbAlcohol
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(367, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(309, 24);
-            this.comboBox1.TabIndex = 5;
+            this.cbAlcohol.AutoSize = true;
+            this.cbAlcohol.Location = new System.Drawing.Point(23, 44);
+            this.cbAlcohol.Name = "cbAlcohol";
+            this.cbAlcohol.Size = new System.Drawing.Size(153, 20);
+            this.cbAlcohol.TabIndex = 1;
+            this.cbAlcohol.Text = "Bebidas Alcoholicas";
+            this.cbAlcohol.UseVisualStyleBackColor = true;
             // 
-            // lblResidencia
+            // cbBoletin
             // 
-            this.lblResidencia.AutoSize = true;
-            this.lblResidencia.Location = new System.Drawing.Point(452, 44);
-            this.lblResidencia.Name = "lblResidencia";
-            this.lblResidencia.Size = new System.Drawing.Size(128, 16);
-            this.lblResidencia.TabIndex = 6;
-            this.lblResidencia.Text = "País de Residencia:";
+            this.cbBoletin.AutoSize = true;
+            this.cbBoletin.Location = new System.Drawing.Point(23, 18);
+            this.cbBoletin.Name = "cbBoletin";
+            this.cbBoletin.Size = new System.Drawing.Size(154, 20);
+            this.cbBoletin.TabIndex = 0;
+            this.cbBoletin.Text = "Suscribirse al Boletin";
+            this.cbBoletin.UseVisualStyleBackColor = true;
             // 
-            // trackBar1
+            // tpVisualizacion
             // 
-            this.trackBar1.BackColor = System.Drawing.Color.Linen;
-            this.trackBar1.Location = new System.Drawing.Point(367, 150);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(309, 56);
-            this.trackBar1.TabIndex = 7;
+            this.tpVisualizacion.Controls.Add(this.lblFecha);
+            this.tpVisualizacion.Controls.Add(this.pictureBox1);
+            this.tpVisualizacion.Location = new System.Drawing.Point(4, 25);
+            this.tpVisualizacion.Name = "tpVisualizacion";
+            this.tpVisualizacion.Padding = new System.Windows.Forms.Padding(3);
+            this.tpVisualizacion.Size = new System.Drawing.Size(767, 396);
+            this.tpVisualizacion.TabIndex = 2;
+            this.tpVisualizacion.Text = "Visualizacion";
+            this.tpVisualizacion.UseVisualStyleBackColor = true;
             // 
-            // trackBar2
+            // pictureBox1
             // 
-            this.trackBar2.BackColor = System.Drawing.Color.Linen;
-            this.trackBar2.Location = new System.Drawing.Point(367, 276);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(309, 56);
-            this.trackBar2.TabIndex = 8;
+            this.pictureBox1.Location = new System.Drawing.Point(87, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(315, 272);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // lblSatisfaccion
+            // lblFecha
             // 
-            this.lblSatisfaccion.AutoSize = true;
-            this.lblSatisfaccion.Location = new System.Drawing.Point(452, 131);
-            this.lblSatisfaccion.Name = "lblSatisfaccion";
-            this.lblSatisfaccion.Size = new System.Drawing.Size(133, 16);
-            this.lblSatisfaccion.TabIndex = 9;
-            this.lblSatisfaccion.Text = "Nivel de Satisfaccion";
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(84, 304);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(48, 16);
+            this.lblFecha.TabIndex = 1;
+            this.lblFecha.Text = "Fecha:";
             // 
-            // lblRecomendar
+            // btnGuardar
             // 
-            this.lblRecomendar.AutoSize = true;
-            this.lblRecomendar.Location = new System.Drawing.Point(421, 257);
-            this.lblRecomendar.Name = "lblRecomendar";
-            this.lblRecomendar.Size = new System.Drawing.Size(197, 16);
-            this.lblRecomendar.TabIndex = 10;
-            this.lblRecomendar.Text = "¿Recomendarías este servicio?";
+            this.btnGuardar.Location = new System.Drawing.Point(34, 461);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(124, 40);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(338, 460);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(124, 40);
+            this.btnLimpiar.TabIndex = 2;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(642, 460);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(124, 40);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 522);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.tcPrincipal);
             this.Name = "Form1";
             this.Text = "Gestión Avanzada de Información Profesional";
             this.tcPrincipal.ResumeLayout(false);
             this.tpDatosPersonales.ResumeLayout(false);
             this.tpDatosPersonales.PerformLayout();
-            this.tpPreferencias.ResumeLayout(false);
-            this.pnlTextBox.ResumeLayout(false);
-            this.pnlTextBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
             this.pnlRadioBtn.ResumeLayout(false);
             this.pnlRadioBtn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
+            this.pnlTextBox.ResumeLayout(false);
+            this.pnlTextBox.PerformLayout();
+            this.tpPreferencias.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.tpVisualizacion.ResumeLayout(false);
+            this.tpVisualizacion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -458,6 +518,11 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label lblRecomendar;
         private System.Windows.Forms.Label lblSatisfaccion;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

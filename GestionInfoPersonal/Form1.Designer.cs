@@ -48,11 +48,27 @@
             this.lblGenero = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
             this.nudEdad = new System.Windows.Forms.NumericUpDown();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cbBoletin = new System.Windows.Forms.CheckBox();
+            this.cbAlcohol = new System.Windows.Forms.CheckBox();
+            this.cbDulces = new System.Windows.Forms.CheckBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.lblHobbies = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblResidencia = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.lblSatisfaccion = new System.Windows.Forms.Label();
+            this.lblRecomendar = new System.Windows.Forms.Label();
             this.tcPrincipal.SuspendLayout();
             this.tpDatosPersonales.SuspendLayout();
+            this.tpPreferencias.SuspendLayout();
             this.pnlTextBox.SuspendLayout();
             this.pnlRadioBtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // tcPrincipal
@@ -82,6 +98,7 @@
             // 
             // tpPreferencias
             // 
+            this.tpPreferencias.Controls.Add(this.panel1);
             this.tpPreferencias.Location = new System.Drawing.Point(4, 25);
             this.tpPreferencias.Name = "tpPreferencias";
             this.tpPreferencias.Padding = new System.Windows.Forms.Padding(3);
@@ -259,6 +276,129 @@
             0,
             0});
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblRecomendar);
+            this.panel1.Controls.Add(this.lblSatisfaccion);
+            this.panel1.Controls.Add(this.trackBar2);
+            this.panel1.Controls.Add(this.trackBar1);
+            this.panel1.Controls.Add(this.lblResidencia);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.lblHobbies);
+            this.panel1.Controls.Add(this.checkedListBox1);
+            this.panel1.Controls.Add(this.cbDulces);
+            this.panel1.Controls.Add(this.cbAlcohol);
+            this.panel1.Controls.Add(this.cbBoletin);
+            this.panel1.Location = new System.Drawing.Point(16, 14);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(734, 369);
+            this.panel1.TabIndex = 0;
+            // 
+            // cbBoletin
+            // 
+            this.cbBoletin.AutoSize = true;
+            this.cbBoletin.Location = new System.Drawing.Point(23, 18);
+            this.cbBoletin.Name = "cbBoletin";
+            this.cbBoletin.Size = new System.Drawing.Size(154, 20);
+            this.cbBoletin.TabIndex = 0;
+            this.cbBoletin.Text = "Suscribirse al Boletin";
+            this.cbBoletin.UseVisualStyleBackColor = true;
+            // 
+            // cbAlcohol
+            // 
+            this.cbAlcohol.AutoSize = true;
+            this.cbAlcohol.Location = new System.Drawing.Point(23, 44);
+            this.cbAlcohol.Name = "cbAlcohol";
+            this.cbAlcohol.Size = new System.Drawing.Size(153, 20);
+            this.cbAlcohol.TabIndex = 1;
+            this.cbAlcohol.Text = "Bebidas Alcoholicas";
+            this.cbAlcohol.UseVisualStyleBackColor = true;
+            // 
+            // cbDulces
+            // 
+            this.cbDulces.AutoSize = true;
+            this.cbDulces.Location = new System.Drawing.Point(23, 70);
+            this.cbDulces.Name = "cbDulces";
+            this.cbDulces.Size = new System.Drawing.Size(148, 20);
+            this.cbDulces.TabIndex = 2;
+            this.cbDulces.Text = "Dulces, chucherias..";
+            this.cbDulces.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Deporte",
+            "Videojuegos",
+            "Coleccionismo",
+            "Música",
+            "Limpieza",
+            "Viajes"});
+            this.checkedListBox1.Location = new System.Drawing.Point(23, 209);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(154, 123);
+            this.checkedListBox1.TabIndex = 3;
+            // 
+            // lblHobbies
+            // 
+            this.lblHobbies.AutoSize = true;
+            this.lblHobbies.Location = new System.Drawing.Point(71, 190);
+            this.lblHobbies.Name = "lblHobbies";
+            this.lblHobbies.Size = new System.Drawing.Size(59, 16);
+            this.lblHobbies.TabIndex = 4;
+            this.lblHobbies.Text = "Hobbies";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(367, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(309, 24);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // lblResidencia
+            // 
+            this.lblResidencia.AutoSize = true;
+            this.lblResidencia.Location = new System.Drawing.Point(452, 44);
+            this.lblResidencia.Name = "lblResidencia";
+            this.lblResidencia.Size = new System.Drawing.Size(128, 16);
+            this.lblResidencia.TabIndex = 6;
+            this.lblResidencia.Text = "País de Residencia:";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.BackColor = System.Drawing.Color.Linen;
+            this.trackBar1.Location = new System.Drawing.Point(367, 150);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(309, 56);
+            this.trackBar1.TabIndex = 7;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.BackColor = System.Drawing.Color.Linen;
+            this.trackBar2.Location = new System.Drawing.Point(367, 276);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(309, 56);
+            this.trackBar2.TabIndex = 8;
+            // 
+            // lblSatisfaccion
+            // 
+            this.lblSatisfaccion.AutoSize = true;
+            this.lblSatisfaccion.Location = new System.Drawing.Point(452, 131);
+            this.lblSatisfaccion.Name = "lblSatisfaccion";
+            this.lblSatisfaccion.Size = new System.Drawing.Size(133, 16);
+            this.lblSatisfaccion.TabIndex = 9;
+            this.lblSatisfaccion.Text = "Nivel de Satisfaccion";
+            // 
+            // lblRecomendar
+            // 
+            this.lblRecomendar.AutoSize = true;
+            this.lblRecomendar.Location = new System.Drawing.Point(421, 257);
+            this.lblRecomendar.Name = "lblRecomendar";
+            this.lblRecomendar.Size = new System.Drawing.Size(197, 16);
+            this.lblRecomendar.TabIndex = 10;
+            this.lblRecomendar.Text = "¿Recomendarías este servicio?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -270,11 +410,16 @@
             this.tcPrincipal.ResumeLayout(false);
             this.tpDatosPersonales.ResumeLayout(false);
             this.tpDatosPersonales.PerformLayout();
+            this.tpPreferencias.ResumeLayout(false);
             this.pnlTextBox.ResumeLayout(false);
             this.pnlTextBox.PerformLayout();
             this.pnlRadioBtn.ResumeLayout(false);
             this.pnlRadioBtn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -301,6 +446,18 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox cbDulces;
+        private System.Windows.Forms.CheckBox cbAlcohol;
+        private System.Windows.Forms.CheckBox cbBoletin;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label lblResidencia;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblHobbies;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Label lblRecomendar;
+        private System.Windows.Forms.Label lblSatisfaccion;
     }
 }
 

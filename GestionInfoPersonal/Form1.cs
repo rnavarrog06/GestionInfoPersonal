@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace GestionInfoPersonal
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -63,10 +65,7 @@ namespace GestionInfoPersonal
 
         }
 
-        private void mcNacimiento_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -80,7 +79,7 @@ namespace GestionInfoPersonal
             ttAyuda.SetToolTip(btnLimpiar, "Limpiar los campos");
             ttAyuda.SetToolTip(btnSalir, "Salir de la aplicación");
 
-
+            
         }
 
         private void tempFecha_Tick(object sender, EventArgs e)
@@ -91,6 +90,23 @@ namespace GestionInfoPersonal
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             var fecha = mcNacimiento.SelectionStart;
+            
+
+            MessageBox.Show("Usuario: "+tboxNombre.Text+
+                "\nDireccion: "+tboxDireccion.Text+
+                "\nCorreo: "+tboxCorreo.Text+
+                "\nFecha de nacimiento: " + fecha+
+                "\nEdad: " + nudEdad.Value+
+                "\nGenero: " + (rbHombre.Checked ? "Hombre" : rbMujer.Checked ? "Mujer" : "Otro")+
+                "\nPais: " + cboxPais.SelectedItem+
+                "\nBoletin: " + (cbBoletin.Checked ? "Si" : "No")+
+                "\nIntereses: " +(cbAlcohol.Checked ? "Alcohol " : "") + (cbDulces.Checked ? "Dulces " : "") +
+                "\nHobbies: " + (chlbHobbies.CheckedItems.Count > 0 ? String.Join(", ", chlbHobbies.CheckedItems.Cast<string>().ToArray()) : "Ninguno") +
+                "\nNivel de Satisfaccion: " + tbSatisfaccion.Value+
+                "\nProbabilidades de Recomendar este servicio: " + tbRecomendar.Value +
+                "\n¿Tiene imagen de perfil actualmente?: " + (pboxImagen.Image != null ? "Si" : "No"), 
+                "Resumen de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
 
         }
 

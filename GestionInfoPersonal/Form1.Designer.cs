@@ -70,6 +70,7 @@
             this.btnImagen = new System.Windows.Forms.Button();
             this.ofdImagen = new System.Windows.Forms.OpenFileDialog();
             this.ttAyuda = new System.Windows.Forms.ToolTip(this.components);
+            this.lblFecha2 = new System.Windows.Forms.Label();
             this.tcPrincipal.SuspendLayout();
             this.tpDatosPersonales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).BeginInit();
@@ -97,6 +98,7 @@
             // 
             // tpDatosPersonales
             // 
+            this.tpDatosPersonales.BackColor = System.Drawing.Color.Pink;
             this.tpDatosPersonales.Controls.Add(this.nudEdad);
             this.tpDatosPersonales.Controls.Add(this.lblEdad);
             this.tpDatosPersonales.Controls.Add(this.pnlRadioBtn);
@@ -108,7 +110,6 @@
             this.tpDatosPersonales.Size = new System.Drawing.Size(573, 319);
             this.tpDatosPersonales.TabIndex = 0;
             this.tpDatosPersonales.Text = "Datos Personales";
-            this.tpDatosPersonales.UseVisualStyleBackColor = true;
             // 
             // nudEdad
             // 
@@ -140,6 +141,7 @@
             // 
             // pnlRadioBtn
             // 
+            this.pnlRadioBtn.BackColor = System.Drawing.Color.MistyRose;
             this.pnlRadioBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlRadioBtn.Controls.Add(this.lblGenero);
             this.pnlRadioBtn.Controls.Add(this.rbOtro);
@@ -199,6 +201,7 @@
             // 
             // pnlTextBox
             // 
+            this.pnlTextBox.BackColor = System.Drawing.Color.MistyRose;
             this.pnlTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTextBox.Controls.Add(this.lblNacimiento);
             this.pnlTextBox.Controls.Add(this.mcNacimiento);
@@ -230,7 +233,7 @@
             this.mcNacimiento.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.mcNacimiento.Name = "mcNacimiento";
             this.mcNacimiento.TabIndex = 6;
-            this.mcNacimiento.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.mcNacimiento_DateChanged);
+            
             // 
             // lblCorreo
             // 
@@ -300,6 +303,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Ivory;
             this.panel1.Controls.Add(this.lblRecomendar);
             this.panel1.Controls.Add(this.lblSatisfaccion);
             this.panel1.Controls.Add(this.tbRecomendar);
@@ -435,6 +439,8 @@
             // 
             // tpVisualizacion
             // 
+            this.tpVisualizacion.BackColor = System.Drawing.Color.Lavender;
+            this.tpVisualizacion.Controls.Add(this.lblFecha2);
             this.tpVisualizacion.Controls.Add(this.btnImagen);
             this.tpVisualizacion.Controls.Add(this.lblFecha);
             this.tpVisualizacion.Controls.Add(this.pboxImagen);
@@ -445,58 +451,71 @@
             this.tpVisualizacion.Size = new System.Drawing.Size(573, 319);
             this.tpVisualizacion.TabIndex = 2;
             this.tpVisualizacion.Text = "Visualizacion";
-            this.tpVisualizacion.UseVisualStyleBackColor = true;
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(63, 247);
+            this.lblFecha.Location = new System.Drawing.Point(105, 248);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(40, 13);
+            this.lblFecha.Size = new System.Drawing.Size(0, 13);
             this.lblFecha.TabIndex = 1;
-            this.lblFecha.Text = "Fecha:";
             // 
             // pboxImagen
             // 
+            this.pboxImagen.BackColor = System.Drawing.Color.White;
+            this.pboxImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pboxImagen.Location = new System.Drawing.Point(65, 15);
             this.pboxImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pboxImagen.Name = "pboxImagen";
             this.pboxImagen.Size = new System.Drawing.Size(236, 221);
+            this.pboxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxImagen.TabIndex = 0;
             this.pboxImagen.TabStop = false;
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.FlatAppearance.BorderSize = 3;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Location = new System.Drawing.Point(26, 375);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(93, 32);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLimpiar.FlatAppearance.BorderSize = 3;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Location = new System.Drawing.Point(254, 374);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(93, 32);
             this.btnLimpiar.TabIndex = 2;
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalir.FlatAppearance.BorderSize = 3;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Location = new System.Drawing.Point(482, 374);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(93, 32);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // tempFecha
@@ -506,7 +525,7 @@
             // 
             // btnImagen
             // 
-            this.btnImagen.Location = new System.Drawing.Point(338, 15);
+            this.btnImagen.Location = new System.Drawing.Point(384, 195);
             this.btnImagen.Name = "btnImagen";
             this.btnImagen.Size = new System.Drawing.Size(111, 41);
             this.btnImagen.TabIndex = 2;
@@ -518,10 +537,20 @@
             // 
             this.ofdImagen.FileName = "Imagen";
             // 
+            // lblFecha2
+            // 
+            this.lblFecha2.AutoSize = true;
+            this.lblFecha2.Location = new System.Drawing.Point(65, 248);
+            this.lblFecha2.Name = "lblFecha2";
+            this.lblFecha2.Size = new System.Drawing.Size(40, 13);
+            this.lblFecha2.TabIndex = 3;
+            this.lblFecha2.Text = "Fecha:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(600, 424);
             this.ControlBox = false;
             this.Controls.Add(this.btnSalir);
@@ -595,6 +624,7 @@
         private System.Windows.Forms.Button btnImagen;
         private System.Windows.Forms.OpenFileDialog ofdImagen;
         private System.Windows.Forms.ToolTip ttAyuda;
+        private System.Windows.Forms.Label lblFecha2;
     }
 }
 

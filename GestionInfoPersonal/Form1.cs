@@ -65,7 +65,7 @@ namespace GestionInfoPersonal
 
         private void mcNacimiento_DateChanged(object sender, DateRangeEventArgs e)
         {
-            lblNacimiento.Text = mcNacimiento.SelectionStart.ToString("dd/MM/yyyy");
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -74,11 +74,34 @@ namespace GestionInfoPersonal
             cboxPais.DataSource = paises;
 
             tempFecha.Start();
+
+
+            ttAyuda.SetToolTip(btnGuardar, "Guardar los datos");
+            ttAyuda.SetToolTip(btnLimpiar, "Limpiar los campos");
+            ttAyuda.SetToolTip(btnSalir, "Salir de la aplicación");
+
+
         }
 
         private void tempFecha_Tick(object sender, EventArgs e)
         {
             lblFecha.Text = DateTime.Now.ToString();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            var fecha = mcNacimiento.SelectionStart;
+
+        }
+
+        private void btnImagen_Click(object sender, EventArgs e)
+        {
+            ofdImagen.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png";
+            ofdImagen.Title = "Selecciona una imagen";
+            DialogResult rs = ofdImagen.ShowDialog();
+            if (rs == DialogResult.OK) {
+                pboxImagen.Image = Image.FromFile(ofdImagen.FileName);
+            }
         }
     }
 }

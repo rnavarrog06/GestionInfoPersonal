@@ -67,6 +67,9 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.tempFecha = new System.Windows.Forms.Timer(this.components);
+            this.btnImagen = new System.Windows.Forms.Button();
+            this.ofdImagen = new System.Windows.Forms.OpenFileDialog();
+            this.ttAyuda = new System.Windows.Forms.ToolTip(this.components);
             this.tcPrincipal.SuspendLayout();
             this.tpDatosPersonales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).BeginInit();
@@ -432,6 +435,7 @@
             // 
             // tpVisualizacion
             // 
+            this.tpVisualizacion.Controls.Add(this.btnImagen);
             this.tpVisualizacion.Controls.Add(this.lblFecha);
             this.tpVisualizacion.Controls.Add(this.pboxImagen);
             this.tpVisualizacion.Location = new System.Drawing.Point(4, 22);
@@ -471,6 +475,7 @@
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
@@ -498,6 +503,20 @@
             // 
             this.tempFecha.Interval = 1000;
             this.tempFecha.Tick += new System.EventHandler(this.tempFecha_Tick);
+            // 
+            // btnImagen
+            // 
+            this.btnImagen.Location = new System.Drawing.Point(338, 15);
+            this.btnImagen.Name = "btnImagen";
+            this.btnImagen.Size = new System.Drawing.Size(111, 41);
+            this.btnImagen.TabIndex = 2;
+            this.btnImagen.Text = "Abrir Fichero";
+            this.btnImagen.UseVisualStyleBackColor = true;
+            this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
+            // 
+            // ofdImagen
+            // 
+            this.ofdImagen.FileName = "Imagen";
             // 
             // Form1
             // 
@@ -573,6 +592,9 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Timer tempFecha;
+        private System.Windows.Forms.Button btnImagen;
+        private System.Windows.Forms.OpenFileDialog ofdImagen;
+        private System.Windows.Forms.ToolTip ttAyuda;
     }
 }
 
